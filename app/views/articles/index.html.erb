@@ -1,5 +1,6 @@
-<ul>
+<ul class="index">
   <% @articles.each do |article| %>
-    <li><%= link_to article.title, article_path(article) %></li>
+    <li class="item"><%= link_to article.title, article_path(article) %></li>
+    <div class="content"><%= article.content %></div>
   <% end %>
 </ul>
